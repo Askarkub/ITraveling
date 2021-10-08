@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image:url("../src/images/thumb-1920-52896.jpg") ;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* admin page add component start */
+
+
+.add-inputs {
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  margin: 0 auto;
+  /* border: 1px solid red; */
+  margin-bottom: 50px;
+  padding: 15px;
+  background-color: #3d7bed;
+  border-radius: 10px;
+  opacity: 0.9;
+
+}
+
+.add-inputs form {
+  display: flex;
+  width: 350px;
+  flex-direction: column;
+}
+
+.add-inputs form input {
+  width: 100%;
+}
+
+.add-inputs form label {
+  color: #fff;
+}
+
+.place-table {
+  opacity: 0.9;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+/* admin page add component end */
+
+/* main page start */
+
+.main{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.right-sidebar {
+  width: 20%;
+  /* border: 1px solid red; */
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  background: #3d7bed;
+  margin-left: 10px;
+  opacity: 0.8;
+  border-radius:10px;
+  color: white;
+}
+
+.content{
+  width: 80%;
+}
+
+.content-block {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  
+}
+
+/* main page end */
+
+a {
+  color:unset;
+  text-decoration:none;
+}
+
+.navbar{
+  background-color: #350566 !important;
+}
+
+
+.maintext{
+  justify-content: center;
+  text-align: center;
+  color: #350566;
+}
+
+
+.favorite1{
+  background-image: url("https://www.bagnet.org/storage/29/29/13/15/729_486_590c3772e572c.jpg");
+}
+
+.pagin-block ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.pagin-block ul li {
+  list-style:none;
+  font-size: 20px;
+  margin: 20px;
+}
+
+.pagin-block ul li:hover {
+  list-style:none;
+  font-weight: bold;
+  color: blue;
+  cursor: pointer;
+}
