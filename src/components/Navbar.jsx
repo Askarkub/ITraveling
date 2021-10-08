@@ -11,9 +11,6 @@ import Menu from '@material-ui/core/Menu';
 import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
 import AccountCircle from '@material-ui/icons/AccountCircle';
-import MailIcon from '@material-ui/icons/Mail';
-import NotificationsIcon from '@material-ui/icons/Notifications';
-import MoreIcon from '@material-ui/icons/MoreVert';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import { clientContext } from '../contexts/ClientContext';
 import { Link, useHistory } from 'react-router-dom';
@@ -215,11 +212,6 @@ export default function Navbar() {
                         />
                     </div>
 
-                    <div className={classes.nav}>
-                        <Link to="/admin">Admin</Link>
-                    </div>
-
-
                     <div className={classes.grow} />
                     <div className={classes.sectionDesktop}>
                         <IconButton aria-label="show 4 new mails" color="inherit">
@@ -241,6 +233,7 @@ export default function Navbar() {
                         </IconButton>
                     </div>
                     <div className={classes.sectionMobile}>
+
                         <IconButton
                             aria-label="show more"
                             aria-controls={mobileMenuId}
@@ -248,7 +241,7 @@ export default function Navbar() {
                             onClick={handleMobileMenuOpen}
                             color="inherit"
                         >
-                            <MoreIcon />
+                            <MenuIcon />
                         </IconButton>
                     </div>
                 </Toolbar>

@@ -54,7 +54,7 @@ export default function PlaceTable() {
                                             <TableCell align="left">{row.price}</TableCell>
                                             <TableCell align="left">{row.location}</TableCell>
                                             <TableCell align="left">
-                                                <img width="100" src={row.photo} alt="" />
+                                                <img width="200" src={row.photo} alt="" />
                                             </TableCell>
                                             <TableCell align="left">
                                                 <Button
