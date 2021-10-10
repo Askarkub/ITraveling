@@ -20,7 +20,7 @@ const useStyles = makeStyles({
 
 export default function FavoriteTable() {
     const classes = useStyles();
-    const { favorite, getFavorite, changeCountPlaces, addAndDeletePlaceInFavorite, totalPrice } = useContext(clientContext)
+    const { favorite, getFavorite, changeCountPlaces, addAndDeletePlaceInFavorite } = useContext(clientContext)
 
     useEffect(() => {
         getFavorite()
@@ -40,7 +40,7 @@ export default function FavoriteTable() {
                 favorite ? (
                     <TableContainer component={Paper} >
                         <Table className={classes.table} aria-label="caption table">
-                            <caption> <h2 className="total-price">Итого:{totalPrice}</h2> </caption>
+                            <caption> <h2 className="total-price">Итого: 4500 сом</h2> </caption>
                             <TableHead>
                                 <TableRow>
                                     <TableCell>№</TableCell>

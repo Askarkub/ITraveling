@@ -9,38 +9,39 @@ export default function PaymentForm() {
     return (
         <React.Fragment>
             <Typography variant="h6" gutterBottom>
-                Payment method
+                Способ оплаты
             </Typography>
             <Grid container spacing={3}>
                 <Grid item xs={12} md={6}>
-                    <TextField required id="cardName" label="Name on card" fullWidth autoComplete="cc-name" />
+                    <TextField required id="cardName" label="Имя на карте" fullWidth autoComplete="cc-name" />
                 </Grid>
                 <Grid item xs={12} md={6}>
                     <TextField
                         required
                         id="cardNumber"
-                        label="Card number"
+                        label="Номер карты"
                         fullWidth
                         autoComplete="cc-number"
                     />
                 </Grid>
                 <Grid item xs={12} md={6}>
-                    <TextField required id="expDate" label="Expiry date" fullWidth autoComplete="cc-exp" />
+                    <TextField required id="cardType" label="Тип карты" fullWidth autoComplete="cc-cardType" />
                 </Grid>
                 <Grid item xs={12} md={6}>
                     <TextField
                         required
                         id="cvv"
                         label="CVV"
-                        helperText="Last three digits on signature strip"
+                        helperText="Последние три цифры на полосе для подписи"
                         fullWidth
                         autoComplete="cc-csc"
                     />
                 </Grid>
+
                 <Grid item xs={12}>
                     <FormControlLabel
                         control={<Checkbox color="secondary" name="saveCard" value="yes" />}
-                        label="Remember credit card details for next time"
+                        label="Сохранить детали о карте"
                     />
                 </Grid>
             </Grid>

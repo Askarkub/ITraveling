@@ -9,7 +9,7 @@ export default function AddressForm() {
     return (
         <React.Fragment>
             <Typography variant="h6" gutterBottom>
-                Shipping address
+                Адрес доставки
             </Typography>
             <Grid container spacing={3}>
                 <Grid item xs={12} sm={12}>
@@ -17,7 +17,7 @@ export default function AddressForm() {
                         required
                         id="name"
                         name="firstName"
-                        label="Name"
+                        label="Ф.И.О."
                         fullWidth
                         autoComplete="given-name"
                     />
@@ -28,7 +28,7 @@ export default function AddressForm() {
                         required
                         id="address"
                         name="address"
-                        label="Address"
+                        label="Адрес"
                         fullWidth
                         autoComplete="shipping address-line1"
                     />
@@ -39,7 +39,7 @@ export default function AddressForm() {
                         required
                         id="phone"
                         name="phone"
-                        label="Phone"
+                        label="Номер телефона"
                         fullWidth
                         autoComplete="shipping address-level2"
                     />
@@ -47,7 +47,7 @@ export default function AddressForm() {
                 <Grid item xs={12}>
                     <FormControlLabel
                         control={<Checkbox color="secondary" name="saveAddress" value="yes" />}
-                        label="Use this address for payment details"
+                        label="Использовать этот адрес для оплаты платежа"
                     />
                 </Grid>
             </Grid>

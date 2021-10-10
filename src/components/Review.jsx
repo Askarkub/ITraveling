@@ -9,15 +9,14 @@ import { clientContext } from '../contexts/ClientContext';
 
 
 const places = [
-    { name: 'Place 1', desc: 'A nice thing', price: '$9.99' },
-    { name: 'Shipping', desc: '', price: 'Free' },
+    { name: 'Бишкек,пр. Манаса 40 ', desc: 'Тур Бурана', price: '4500' },
 ];
-const addresses = ['1 Material-UI Drive', 'Reactville', 'Anytown', '99999', 'USA'];
+const addresses = [];
 const payments = [
-    { name: 'Card type', detail: 'Visa' },
-    { name: 'Card holder', detail: 'Mr John Smith' },
-    { name: 'Card number', detail: 'xxxx-xxxx-xxxx-1234' },
-    { name: 'Expiry date', detail: '04/2024' },
+    { name: 'Тип карты', detail: 'Visa' },
+    { name: 'Владелец карты', detail: 'Аскар Кубанычбеков' },
+    { name: 'Номер карты', detail: 'xxxx-xxxx-xxxx-1234' },
+
 ];
 
 const useStyles = makeStyles((theme) => ({
@@ -38,33 +37,33 @@ export default function Review() {
     return (
         <React.Fragment>
             <Typography variant="h6" gutterBottom>
-                Order summary
+                Итоги заказа
             </Typography>
             <List disablePadding>
                 {places.map((place) => (
                     <ListItem className={classes.listItem} key={place.name}>
                         <ListItemText primary={place.name} secondary={place.desc} />
-                        <Typography variant="body2">{place.price}</Typography>
+                        <Typography variant="body2">{place.price} сом</Typography>
                     </ListItem>
                 ))}
                 <ListItem className={classes.listItem}>
-                    <ListItemText primary="Total" />
+                    <ListItemText primary="Итого" />
                     <Typography variant="subtitle1" className={classes.total}>
-                        $34.06
+                        4500 сом
                     </Typography>
                 </ListItem>
             </List>
             <Grid container spacing={2}>
                 <Grid item xs={12} sm={6}>
                     <Typography variant="h6" gutterBottom className={classes.title}>
-                        Shipping
+                        Ф.И.О.
                     </Typography>
-                    <Typography gutterBottom>John Smith</Typography>
+                    <Typography gutterBottom>Аскар Кубанычбеков</Typography>
                     <Typography gutterBottom>{addresses.join(', ')}</Typography>
                 </Grid>
                 <Grid item container direction="column" xs={12} sm={6}>
                     <Typography variant="h6" gutterBottom className={classes.title}>
-                        Payment details
+                        Детали оплаты
                     </Typography>
                     <Grid container>
                         {payments.map((payment) => (

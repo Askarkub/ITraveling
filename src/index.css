@@ -119,6 +119,7 @@ a {
 
 .pagin-block ul li {
   list-style:none;
+  color: white;
   font-size: 20px;
   margin: 20px;
 }

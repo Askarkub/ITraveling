@@ -52,10 +52,10 @@ const RightSidebar = () => {
             <FormControl component="fieldset">
                 <FormLabel component="legend">Стоимость тура</FormLabel>
                 <RadioGroup aria-label="gender" name="gender1" value={price} onChange={(e) => filterPlaces('price_lte', e.target.value)}>
-                    <FormControlLabel value="1000" control={<Radio />} label="1000" />
-                    <FormControlLabel value="3000" control={<Radio />} label="3000" />
-                    <FormControlLabel value="5000" control={<Radio />} label="5000" />
-                    <FormControlLabel value="10000" control={<Radio />} label="10000" />
+                    <FormControlLabel value="1000" control={<Radio />} label="До 1000 сом" />
+                    <FormControlLabel value="3000" control={<Radio />} label="До 3000 сом" />
+                    <FormControlLabel value="5000" control={<Radio />} label="До 5000 сом" />
+                    <FormControlLabel value="10000" control={<Radio />} label="До 10000 сом" />
                 </RadioGroup>
             </FormControl>
             <div>

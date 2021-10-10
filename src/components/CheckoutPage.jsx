@@ -14,18 +14,6 @@ import AddressForm from './AddressForm';
 import PaymentForm from './PaymentForm';
 import Review from './Review';
 
-function Copyright() {
-    return (
-        <Typography variant="body2" color="textSecondary" align="center">
-            {'Copyright © '}
-            <Link color="inherit" href="https://mui.com/">
-                Your Website
-            </Link>{' '}
-            {new Date().getFullYear()}
-            {'.'}
-        </Typography>
-    );
-}
 
 const useStyles = makeStyles((theme) => ({
     appBar: {
@@ -64,7 +52,7 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-const steps = ['Shipping address', 'Payment details', 'Review your order'];
+const steps = ['Адрес Доставки', 'Способ оплаты', 'Информация о заказе'];
 
 function getStepContent(step) {
     switch (step) {
@@ -110,11 +98,10 @@ export default function Checkout() {
                         {activeStep === steps.length ? (
                             <React.Fragment>
                                 <Typography variant="h5" gutterBottom>
-                                    Thank you for your order.
+                                    Спасибо за ваш выбор.
                                 </Typography>
                                 <Typography variant="subtitle1">
-                                    Your order number is #2001539. We have emailed your order confirmation, and will
-                                    send you an update when your order has shipped.
+                                    Номер вашего заказа #2001539. Мы отправим информацию о вашем заказе на вашу почту и обновим статус после совершения оплаты.
                                 </Typography>
                             </React.Fragment>
                         ) : (
@@ -123,7 +110,7 @@ export default function Checkout() {
                                 <div className={classes.buttons}>
                                     {activeStep !== 0 && (
                                         <Button onClick={handleBack} className={classes.button}>
-                                            Back
+                                            Назад
                                         </Button>
                                     )}
                                     <Button
@@ -132,14 +119,13 @@ export default function Checkout() {
                                         onClick={handleNext}
                                         className={classes.button}
                                     >
-                                        {activeStep === steps.length - 1 ? 'Place order' : 'Next'}
+                                        {activeStep === steps.length - 1 ? 'Подтвердить заказ' : 'Далее'}
                                     </Button>
                                 </div>
                             </React.Fragment>
                         )}
                     </React.Fragment>
                 </Paper>
-                <Copyright />
             </main>
         </React.Fragment>
     );
